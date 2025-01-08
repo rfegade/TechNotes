@@ -36,7 +36,7 @@ app.use("/", require("./routes/root.js"));
 // route for Users
 app.use("/users", require("./routes/userRoutes"));
 // route for Notes
-app.use("/notes", require("./routes/notesRoutes"));
+app.use("/notes", require("./routes/notesRoute"));
 
 app.all("*", (req, res) => {
   res.status(404);
